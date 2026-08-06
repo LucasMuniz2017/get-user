@@ -1,5 +1,6 @@
-const button = document.querySelector('button')
-const input = document.querySelector('input')
+const button = document.querySelector('button');
+const input = document.querySelector('input');
+const result = document.querySelector('p')
 
 const resource = 'users';
 
@@ -13,14 +14,13 @@ async function getUsers() {
     const user = data.find(user => user.id === id);
 
     if (!user) {
-        console.log(`Usuário  de id ${id} não encotrado`)
+        result.textContent = `Usuário de id ${id} não encontrado.`;
+        console.log(`Usuário de id ${id} não encontrado.`);
         return;
     }
 
+    result.textContent = `id de usuário: ${user.id} Nome: ${user.name} Idade: ${user.age} Status de usuário: ${user.status}`
     console.log(user);
-    
 }
 
 button.addEventListener('click', getUsers);
-
-
