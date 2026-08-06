@@ -1,11 +1,26 @@
+const button = document.querySelector('button')
+const input = document.querySelector('input')
+
 const resource = 'users';
 
 async function getUsers() {
+    const id = Number(input.value);
+
     const response = await fetch(`http://localhost:3000/${resource}`);
 
     const data = await response.json();
 
-    console.log(data);
+    const user = data.find(user => user.id === id);
+
+    if (!user) {
+        console.log(`Usuário  de id ${id} não encotrado`)
+        return;
+    }
+
+    console.log(user);
+    
 }
 
-getUsers();
+button.addEventListener('click', getUsers);
+
+
