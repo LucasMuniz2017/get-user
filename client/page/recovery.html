@@ -6,25 +6,26 @@
     name="viewport" 
     content="width=device-width, initial-scale=1.0">
 
-    <title>Acessar</title>
+    <title>Recuperar</title>
 </head>
 
 <body>
     <main>
         <form>
-            <h1>Acessar</h1>
+            <h1>Recuperar</h1>
             <label>E-mail *</label>
             <input type="email" />
-            <label>Senha *</label>
-            <input type="password" />
+            <label> Nova Senha *</label>
+            <input id="new-password" type="password" />
+            <label> Confirmar Nova Senha *</label>
+            <input id="confirm-new-password" type="password" />
             <input type="checkbox" />
-            <label id="label-password">Mostrar Senha</label>
-            <button>Acessar</button>
-            <p>Esqueceu a senha? Recupere-a <a href="./recovery.html">aqui</a>.</p>
+            <label id="labelPassword" >Mostrar Senha</label>
+            <button>Recuperar</button>
             <p>Não possui cadastro? Registre-se <a href="./register.html">aqui</a>.</p>
         </form>
     </main>
 
-    <script src="../scripts/login.js"></script>
+    <script src="../scripts/recovery.js"></script>
 </body>
 </html>
