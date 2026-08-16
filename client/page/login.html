@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
-    <meta 
-    name="viewport" 
-    content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/global.css">
 
     <title>Acessar</title>
 </head>
@@ -13,13 +13,20 @@
     <main>
         <form>
             <h1>Acessar</h1>
+
             <label>E-mail *</label>
             <input type="email" />
+
             <label>Senha *</label>
             <input type="password" />
-            <input type="checkbox" />
-            <label id="label-password">Mostrar Senha</label>
+
+            <div class="show-password-wrapper">
+                <input type="checkbox" />
+                <label id="label-password">Mostrar Senha</label>
+            </div>
+
             <button>Acessar</button>
+
             <p>Esqueceu a senha? Recupere-a <a href="./recovery.html">aqui</a>.</p>
             <p>Não possui cadastro? Registre-se <a href="./register.html">aqui</a>.</p>
         </form>
@@ -27,4 +34,5 @@
 
     <script src="../scripts/login.js"></script>
 </body>
+
 </html>

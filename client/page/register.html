@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
-    <meta 
-    name="viewport" 
-    content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/global.css">
 
     <title>Registrar</title>
 </head>
@@ -13,17 +13,26 @@
     <main>
         <form>
             <h1>Registrar</h1>
+
             <label>E-mail *</label>
             <input type="email" />
+
             <label>Senha *</label>
             <input type="password" />
-            <input type="checkbox" />
-            <label id="labelPassword">Mostrar Senha</label>
+
+            <div class="show-password-wrapper">
+                <input type="checkbox"/>
+                <label id="labelPassword">Mostrar Senha</label>
+            </div>
+
             <button>Registrar</button>
+
             <p>Já possui conta? Acesse-a <a href="./login.html">aqui</a>.</p>
         </form>
     </main>
+    <footer>Este site não é recomendado em caso de suspeita de dengue.</footer>
 
     <script src="../scripts/register.js"></script>
 </body>
+
 </html>

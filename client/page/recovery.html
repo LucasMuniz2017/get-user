@@ -5,6 +5,7 @@
     <meta 
     name="viewport" 
     content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/global.css">
 
     <title>Recuperar</title>
 </head>
@@ -13,15 +14,23 @@
     <main>
         <form>
             <h1>Recuperar</h1>
+
             <label>E-mail *</label>
             <input type="email" />
+
             <label> Nova Senha *</label>
             <input id="new-password" type="password" />
+            
             <label> Confirmar Nova Senha *</label>
             <input id="confirm-new-password" type="password" />
-            <input type="checkbox" />
-            <label id="labelPassword" >Mostrar Senha</label>
+
+            <div class="show-password-wrapper">
+                <input type="checkbox" />
+                <label id="labelPassword" >Mostrar Senha</label>
+            </div>
+
             <button>Recuperar</button>
+
             <p>Não possui cadastro? Registre-se <a href="./register.html">aqui</a>.</p>
         </form>
     </main>
